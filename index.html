@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home - Premium Property Management</title>
+    <meta name="description" content="Distant Abodes provides premium property management services for overseas homeowners with assets in Kerala. Trusted care for your distant homes.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=5">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Vite -->
+    <link rel="preload" as="style" href="assets/css/app.css"><link rel="modulepreload" as="script" href="assets/js/app.js"><link rel="stylesheet" href="assets/css/app.css"><script type="module" src="assets/js/app.js"></script>
+   <style>.stats-section{
+    background:#0B1527;
+    padding:90px 0;
+}
+
+.stats-container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.stats-row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.stat-box{
+    flex:1;
+    min-width:220px;
+    text-align:center;
+}
+
+.stat-number{
+    font-size:50px;
+    font-weight:800;
+    color:#1DABDF;
+    line-height:1;
+    margin-bottom:15px;
+    text-shadow:0 0 15px rgba(29,171,223,.25);
+}
+
+.stat-title{
+    color:#d6d6d6;
+    font-size:16px;
+}
+
+@media(max-width:768px){
+
+.stat-box{
+    min-width:45%;
+}
+
+.stat-number{
+    font-size:60px;
+}
+
+.stat-title{
+    font-size:18px;
+}
+
+}
+</style>    
+</head>
+<body class="font-sans antialiased bg-dark text-white" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="0">
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+    <div class="px-4 lg:px-12">
+        <nav class="flex items-center justify-between h-20 lg:h-24">
+            <!-- Logo -->
+            <a href="home.html" class="flex items-center">
+            <img src="assets/images/logo-white.jpg"
+     alt="Distant Abodes"
+     class="h-16 lg:h-20 w-auto transition-all duration-300"></a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex items-center gap-10">
+                <!-- Services Dropdown -->
+                <div class="relative group">
+                    <button class="header-nav-link flex items-center gap-1.5 text-white/80 hover:text-white font-medium text-[15px] transition-colors">
+                        Links
+                        <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="bg-dark-200/95 backdrop-blur-xl border border-white/10 shadow-elevated rounded-2xl overflow-hidden min-w-[280px] p-2">
+                            <a href="#" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">About Us</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Services</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Why Us</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Our Process</span>
+                            </a>
+                            <a href="#" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Port Folio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="header-nav-link text-white/80 hover:text-white font-medium text-[15px] transition-colors">Contact</a>
+
+                                    <a href="#" class="header-nav-link text-white/80 hover:text-white font-medium text-[15px] transition-colors">
+                        <i class="fas fa-user mr-1"></i> Login
+                    </a>
+                
+                <a href="#" class="btn-primary text-sm px-6 py-3">
+                    Get a Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 flex items-center justify-center">
+                <svg id="menu-open" class="w-6 h-6 text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="menu-close" class="w-6 h-6 text-white hidden transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-dark-200/95 backdrop-blur-xl border-t border-white/10">
+        <div class="px-4 lg:px-6 py-6 space-y-2">
+            <button id="mobile-services-toggle" class="flex items-center justify-between w-full py-3 text-white font-medium">
+                Services
+                <svg class="w-5 h-5 transition-transform text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div id="mobile-services-list" class="hidden pl-4 space-y-1 pb-4 border-b border-white/10">
+                <a href="#" class="block py-2 text-white/60 hover:text-accent transition-colors">Service1</a>
+                <a href="#" class="block py-2 text-white/60 hover:text-accent transition-colors">Service2</a>
+                <a href="#" class="block py-2 text-white/60 hover:text-accent transition-colors">Service3</a>
+                <a href="#" class="block py-2 text-white/60 hover:text-accent transition-colors">Service4</a>
+                <a href="#" class="block py-2 text-white/60 hover:text-accent transition-colors">Service4</a>
+            </div>
+            <a href="#" class="block py-3 text-white font-medium">Contact</a>
+
+                            <a href="#" class="block py-3 text-white font-medium">
+                    <i class="fas fa-user mr-2"></i>Login
+                </a>
+            
+            <a href="#" class="btn-primary w-full justify-center mt-4">Get a Quote</a>
+        </div>
+    </div>
+</header>
+
+<style>
+    /* Initial state - fully transparent */
+    #main-header {
+        background: transparent;
+    }
+
+    /* Scrolled state - dark with blur */
+    #main-header.scrolled {
+        background: rgba(10, 10, 62, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+</style>
+
+<script>
+    const header = document.getElementById('main-header');
+
+    function updateHeaderStyle() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+
+    window.addEventListener('scroll', updateHeaderStyle);
+    updateHeaderStyle();
+
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpen = document.getElementById('menu-open');
+    const menuClose = document.getElementById('menu-close');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuOpen.classList.toggle('hidden');
+        menuClose.classList.toggle('hidden');
+    });
+
+    // Mobile services
+    const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+    const mobileServicesList = document.getElementById('mobile-services-list');
+
+    mobileServicesToggle.addEventListener('click', () => {
+        mobileServicesList.classList.toggle('hidden');
+        mobileServicesToggle.querySelector('svg').classList.toggle('rotate-180');
+    });
+</script>
+
+    <!-- Main -->
+    <main>
+        
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden flex items-end hero-section">
+        <!-- Background image carousel (original hero video was not included in the saved page) -->
+        <div class="absolute inset-0 hero-carousel">
+            <img src="assets/images/distantabodes001.jpg" alt="Distant Abodes managed property in Kerala" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
+            <img src="assets/images/distantabodes002.jpg" alt="Rental property managed by Distant Abodes" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
+               
+ <img src="assets/images/distantabodes003.jpg" alt="Rental property managed by Distant Abodes" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
+               </div>
+
+        <!-- Fallback gradient (visible under the image) -->
+        <div class="absolute inset-0 bg-gradient-to-br from-dark via-primary/30 to-dark -z-10"></div>
+
+        <!-- Overlay -->
+        <!--<div class="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/60 to-transparent"></div>-->
+        <!--<div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-transparent"></div>-->
+        <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/30 to-transparent"></div>
+
+        <!-- Content - Bottom Positioned -->
+        <div class="relative w-full pb-16 md:pb-16 lg:pb-20 pt-32">
+            <div class="px-4 md:px-8 lg:px-12">
+                <div class="max-w-2xl aos-init aos-animate" data-aos="fade-up">
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-normal text-white mb-4 md:mb-6 leading-tight font-serif">
+                      <br>
+                        <span class="text-accent" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">You are with the best 
+Custom Exhibition Display Stand 
+Designers in Middle East</span>
+                    </h1>
+                    <p class="text-base md:text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed" style="font-family: 'Amaranth'; ">
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2">
+                <div class="w-1 h-2 bg-white/50 rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-dark section">
+        <div class="container-main">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <!-- Content -->
+                <div data-aos="fade-right" class="aos-init">
+                    <h2 class="section-title leading-normal" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Exhibitions & Trade Shows,<br><em><span class="text-accent">Branding & Graphics .</span></em></h2>
+                    <p class="text-white/70 text-lg mb-6" style="font-family: 'Amaranth'; ">
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley</p>
+                    <p class="text-white/60 text-lg" style="font-family: 'Amaranth'; ">
+                       Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley </p>
+                </div>
+
+                <!-- Image -->
+                <div class="relative aos-init" data-aos="fade-left">
+                    <img src="assets/images/distantabodes004.jpg" alt="Premium Property" class="w-full rounded-2xl">
+                    <!-- Glow effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stats-row">
+
+            <div class="stat-box">
+                <h2 class="stat-number" data-count="240">0</h2>
+                <p class="stat-title">Lorem Ipsum</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="stat-number" data-count="180">0</h2>
+                <p class="stat-title">Lorem Ipsum</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="stat-number" data-count="35">0</h2>
+                <p class="stat-title">Lorem Ipsum</p>
+            </div>
+
+            <div class="stat-box">
+                <h2 class="stat-number" data-count="48">0</h2>
+                <p class="stat-title">Lorem Ipsum</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="section-darker section overflow-x-hidden">
+        <div class="container-main">
+            <div class="text-left max-w-3xl mb-12 aos-init" data-aos="fade-up">
+                <h2 class="section-title" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">What We Do</h2>
+                <p class="section-subtitle" style="font-family: 'Amaranth';" >
+                   Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and </p>
+            </div>
+        </div>
+
+        <div class="container-wide aos-init" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper services-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Service 1 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="service-card block group">
+                            <img src="assets/images/distantabodes004.jpg" alt="Rental Services" class="service-card-image">
+                            <div class="service-card-overlay"></div>
+                            <div class="service-card-content">
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service1</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="service-card block group">
+                            <img src="assets/images/distantabodes004.jpg" alt="Vacant Property" class="service-card-image">
+                            <div class="service-card-overlay"></div>
+                            <div class="service-card-content">
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service2</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="service-card block group">
+                            <img src="assets/images/distantabodes004.jpg" alt="Development" class="service-card-image">
+                            <div class="service-card-overlay"></div>
+                            <div class="service-card-content">
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service3</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="service-card block group">
+                            <img src="assets/images/distantabodes004.jpg" alt="Legal Services" class="service-card-image">
+                            <div class="service-card-overlay"></div>
+                            <div class="service-card-content">
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service4</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="service-card block group">
+                            <img src="assets/images/distantabodes004.jpg" alt="Buy &amp; Sell" class="service-card-image">
+                            <div class="service-card-overlay"></div>
+                            <div class="service-card-content">
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service5</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision, Mission, Goal -->
+    <section class="section-dark section">
+        <div class="container-main">
+            <div class="max-w-3xl mb-12 aos-init" data-aos="fade-up">
+                <h2 class="section-title"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Relevant Title Here</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card text-center p-6 aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Our Vision</h3>
+                    <p class="text-white/60" style="font-family: 'Amaranth';">
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </div>
+
+                <div class="feature-card text-center p-6 aos-init" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Our Mission</h3>
+                    <p class="text-white/60" style="font-family: 'Amaranth';">
+                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </div>
+
+                <div class="feature-card text-center p-6 aos-init" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Our Goal</h3>
+                    <p class="text-white/60" style="font-family: 'Amaranth';">
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-darker section">
+        <div class="container-main">
+            <div class="max-w-3xl mb-12 aos-init" data-aos="fade-up">
+                <h2 class="section-title"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Why Choose Us?</h2>
+            </div>
+
+            <!-- Item 1 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-14 aos-init" data-aos="fade-up">
+                <div class="relative">
+                    <img src="assets/images/distantabodes001.jpg" alt="Care That Preserves Value" class="w-full rounded-2xl">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason1</h3>
+                    <p class="text-white/70" style="font-family: 'Amaranth';">
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-14 aos-init" data-aos="fade-up">
+                <div class="lg:order-2 relative">
+                    <img src="assets/images/distantabodes001.jpg" alt="Your Interests Fully Protected" class="w-full rounded-2xl">
+                    <div class="absolute -inset-1 bg-gradient-to-l from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
+                </div>
+                <div class="lg:order-1">
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason2</h3>
+                    <p class="text-white/70" style="font-family: 'Amaranth';">
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-14 aos-init" data-aos="fade-up">
+                <div class="relative">
+                    <img src="assets/images/distantabodes001.jpg" alt="Always Informed" class="w-full rounded-2xl">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason3</h3>
+                    <p class="text-white/70" style="font-family: 'Amaranth';">
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center aos-init" data-aos="fade-up">
+                <div class="lg:order-2 relative">
+                    <img src="assets/images/distantabodes001.jpg" alt="Responsible Management" class="w-full rounded-2xl">
+                    <div class="absolute -inset-1 bg-gradient-to-l from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
+                </div>
+                <div class="lg:order-1">
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason4</h3>
+                    <p class="text-white/70" style="font-family: 'Amaranth';">
+                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    
+
+    <!-- CTA -->
+    <section class="section-dark section relative overflow-hidden">
+        <!-- Gradient accent -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent"></div>
+
+        <div class="container-narrow text-center relative">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 font-serif aos-init" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;" data-aos="fade-up">
+                Ready to Elevate Your Exhibition?
+            </h2>
+            <p style="font-family: 'Amaranth'; " class="text-lg text-white/60 mb-10 max-w-2xl mx-auto aos-init" data-aos="fade-up" data-aos-delay="100">
+                 Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 aos-init" data-aos="fade-up" data-aos-delay="200">
+                <a href="quote" class="btn-primary">
+                    Get a Free Quote
+                </a>
+                <a href="contact" class="btn-outline">
+                    Schedule a Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-16 lg:pt-20">
+    <div class="px-4 lg:px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+            <!-- Brand -->
+            <div>
+                <a href="home.html" class="text-xl font-semibold text-white tracking-tight">
+                    Business Infinite Insight
+                </a>
+                <p class="text-white/50 mt-4 text-sm leading-relaxed">
+                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                    </p>
+                </p>
+                <div class="flex gap-3 mt-6">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-instagram text-sm"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-youtube text-sm"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-whatsapp text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h4 class="text-white font-medium mb-4">Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">About us</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Why Us</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">What We Do</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Port Folio</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white font-medium mb-4">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">About Us</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Our Services</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Contact Us</a></li>
+                    <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Get a Quote</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-white font-medium mb-4">Contact</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-3 text-white/50">
+                        <i class="fas fa-map-marker-alt text-accent mt-0.5"></i>
+                        <div>
+                            <p class="mb-2">Asha Zachariah</p>
+                            <p>Business Infinite Insight<br>Muscat, Sultanate of Oman</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 text-white/50">
+                        <i class="fas fa-phone text-accent mt-0.5"></i>
+                        <div>
+                            <p>+968 7743 0919</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3 text-white/50">
+                        <i class="fas fa-envelope text-accent"></i>
+                        <span>biiomanllc@hotmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/40 text-sm">
+                    © 2026 Business Infinite Insight. All rights reserved.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-white/40 hover:text-white/60 text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+     <script>
+        const counters = document.querySelectorAll('.stat-number');
+
+let started = false;
+
+function startCounter() {
+
+    if (started) return;
+
+    const section = document.querySelector('.stats-section');
+
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < window.innerHeight - 100) {
+
+        started = true;
+
+        counters.forEach(counter => {
+
+            const target = +counter.getAttribute('data-count');
+
+            let count = 0;
+
+            const speed = target / 80;
+
+            const update = () => {
+
+                if (count < target) {
+
+                    count += speed;
+
+                    counter.innerHTML = Math.ceil(count) + (target >= 100 ? "+" : "");
+
+                    requestAnimationFrame(update);
+
+                } else {
+
+                    counter.innerHTML = target + (target >= 100 ? "+" : "");
+
+                }
+
+            };
+
+            update();
+
+        });
+
+    }
+
+}
+
+window.addEventListener('scroll', startCounter);
+window.addEventListener('load', startCounter);
+     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+        });
+    </script>
+
+    <script>
+    const servicesSwiper = new Swiper('.services-swiper', {
+        slidesPerView: 1.15,
+        spaceBetween: 16,
+        loop: true,
+        speed: 5000,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2.15,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3.15,
+                spaceBetween: 24,
+            },
+            1280: {
+                slidesPerView: 3.25,
+                spaceBetween: 28,
+            },
+        },
+    });
+
+    // Pause on hover over service cards
+    document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            servicesSwiper.autoplay.stop();
+        });
+        card.addEventListener('mouseleave', () => {
+            servicesSwiper.autoplay.start();
+        });
+    });
+</script>
+
+
+</body></html>
