@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Us - Premium Property Management</title>
+    <meta name="description" content="Get in touch with Distant Abodes for premium property management services. We are here to help overseas homeowners manage their properties in Kerala.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://distantabodes.com/favicon.ico?v=5">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Vite -->
+    <link rel="preload" as="style" href="assets/css/app.css"><link rel="modulepreload" as="script" href="assets/js/app.js"><link rel="stylesheet" href="assets/css/app.css"><script type="module" src="assets/js/app.js"></script>
+    </head>
+<body class="font-sans antialiased bg-dark text-white" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="0">
+   <!-- Header -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+    <div class="px-4 lg:px-12">
+        <nav class="flex items-center justify-between h-20 lg:h-24">
+            <!-- Logo -->
+            <a href="home.html" class="flex items-center">
+                <img src="assets/images/logo-white.png" alt="Distant Abodes" class="h-10 lg:h-12 w-auto transition-all duration-300">
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex items-center gap-10">
+                <!-- Services Dropdown -->
+                <div class="relative group">
+                    <button class="header-nav-link flex items-center gap-1.5 text-white/80 hover:text-white font-medium text-[15px] transition-colors">
+                        Services
+                        <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <div class="bg-dark-200/95 backdrop-blur-xl border border-white/10 shadow-elevated rounded-2xl overflow-hidden min-w-[280px] p-2">
+                            <a href="services/rental.html" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Rental Services</span>
+                            </a>
+                            <a href="services/vacant-property.html" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Vacant Property</span>
+                            </a>
+                            <a href="services/development.html" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Special Projects</span>
+                            </a>
+                            <a href="services/legal.html" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Legal Services</span>
+                            </a>
+                            <a href="services/buying-selling.html" class="flex items-center gap-4 p-4 rounded-xl text-white/70 hover:text-white hover:bg-white/5 transition-all">
+                                <span class="font-medium">Buy &amp; Sell</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="header-nav-link text-white/80 hover:text-white font-medium text-[15px] transition-colors">Contact</a>
+
+                                    <a href="login.html" class="header-nav-link text-white/80 hover:text-white font-medium text-[15px] transition-colors">
+                        <i class="fas fa-user mr-1"></i> Login
+                    </a>
+                
+                <a href="quote.html" class="btn-primary text-sm px-6 py-3">
+                    Get a Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 flex items-center justify-center">
+                <svg id="menu-open" class="w-6 h-6 text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="menu-close" class="w-6 h-6 text-white hidden transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-dark-200/95 backdrop-blur-xl border-t border-white/10">
+        <div class="px-4 lg:px-6 py-6 space-y-2">
+            <button id="mobile-services-toggle" class="flex items-center justify-between w-full py-3 text-white font-medium">
+                Services
+                <svg class="w-5 h-5 transition-transform text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div id="mobile-services-list" class="hidden pl-4 space-y-1 pb-4 border-b border-white/10">
+                <a href="services/rental.html" class="block py-2 text-white/60 hover:text-accent transition-colors">Rental Services</a>
+                <a href="services/vacant-property.html" class="block py-2 text-white/60 hover:text-accent transition-colors">Vacant Property</a>
+                <a href="services/development.html" class="block py-2 text-white/60 hover:text-accent transition-colors">Special Projects</a>
+                <a href="services/legal.html" class="block py-2 text-white/60 hover:text-accent transition-colors">Legal Services</a>
+                <a href="services/buying-selling.html" class="block py-2 text-white/60 hover:text-accent transition-colors">Buy &amp; Sell Assistance</a>
+            </div>
+            <a href="contact.html" class="block py-3 text-white font-medium">Contact</a>
+
+                            <a href="login.html" class="block py-3 text-white font-medium">
+                    <i class="fas fa-user mr-2"></i>Login
+                </a>
+            
+            <a href="quote.html" class="btn-primary w-full justify-center mt-4">Get a Quote</a>
+        </div>
+    </div>
+</header>
+
+
+<style>
+    /* Initial state - fully transparent */
+    #main-header {
+        background: transparent;
+    }
+
+    /* Scrolled state - dark with blur */
+    #main-header.scrolled {
+        background: rgba(10, 10, 62, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+</style>
+
+<script>
+    const header = document.getElementById('main-header');
+
+    function updateHeaderStyle() {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+
+    window.addEventListener('scroll', updateHeaderStyle);
+    updateHeaderStyle();
+
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOpen = document.getElementById('menu-open');
+    const menuClose = document.getElementById('menu-close');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuOpen.classList.toggle('hidden');
+        menuClose.classList.toggle('hidden');
+    });
+
+    // Mobile services
+    const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+    const mobileServicesList = document.getElementById('mobile-services-list');
+
+    mobileServicesToggle.addEventListener('click', () => {
+        mobileServicesList.classList.toggle('hidden');
+        mobileServicesToggle.querySelector('svg').classList.toggle('rotate-180');
+    });
+</script>
+
+    <!-- Main -->
+    <main>
+        
+    <!-- Page Header -->
+    <section class="relative pt-32 pb-20 bg-dark-card">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        </div>
+        <div class="container-custom relative z-10">
+            <div class="max-w-3xl aos-init aos-animate" data-aos="fade-up">
+                <h1 class="text-4xl md:text-5xl font-bold text-text-primary mb-6 font-serif">Get in <span class="text-accent">Touch</span></h1>
+                <p class="text-lg text-text-secondary">
+                    Have questions about our services? We'd love to hear from you. Reach out to us and we'll respond as soon as possible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section-dark">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-1 aos-init aos-animate" data-aos="fade-up">
+                    <div class="sticky top-32 space-y-4">
+                    <!-- Our Offices -->
+                    <div class="card-hover p-4">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-light text-lg"></i>
+                            </div>
+                            <h3 class="font-semibold text-text-primary text-sm pt-2">Our Offices</h3>
+                        </div>
+                        <div class="space-y-3 pl-14">
+                            <div>
+                                <h4 class="font-medium text-text-primary text-sm">US Office</h4>
+                                <p class="text-text-secondary text-sm">
+                                    14380 Cogburn Road<br>
+                                    Milton, Georgia, 30004<br>
+                                    USA
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-text-primary text-sm">Kerala Office</h4>
+                                <p class="text-text-secondary text-sm">
+                                    1038/4, Edens<br>
+                                    Thiruvananthapuram<br>
+                                    Kerala, India
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="card-hover p-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-light text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1 text-sm">Phone</h3>
+                                <p class="text-text-secondary text-sm">+91-9946014446</p>
+                                <p class="text-text-muted text-xs mt-1">Available for inquiries</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="card-hover p-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-light text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1 text-sm">Email</h3>
+                                <p class="text-text-secondary text-sm">admin@distantabodes.com</p>
+                                <p class="text-text-muted text-xs mt-1">We reply within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="card-hover p-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-whatsapp text-light text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1 text-sm">WhatsApp</h3>
+                                <p class="text-text-secondary text-sm">+91-9946014446</p>
+                                <p class="text-text-muted text-xs mt-1">Quick responses available</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="rounded-2xl bg-white p-8 md:p-10 w-full">
+                        <h2 class="text-2xl font-semibold text-dark mb-6">Send us a Message</h2>
+
+                        
+                        <form action="https://distantabodes.com/contact" method="POST" class="space-y-6">
+                            <input type="hidden" name="_token" value="bm6HptRidG3I0N5XHyBBXLtMyr7rpneYyZUtrRyZ" autocomplete="off">                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-dark/70 mb-2">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200 " placeholder="John Doe" value="" required="">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-dark/70 mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200 " placeholder="john@example.com" value="" required="">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-dark/70 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200" placeholder="+1 (555) 000-0000" value="">
+                                </div>
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-dark/70 mb-2">Subject *</label>
+                                    <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200 " placeholder="What is this about?" value="" required="">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-dark/70 mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-dark placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200 " placeholder="Tell us how can we be of help?" required=""></textarea>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <input type="checkbox" id="consent" name="consent" class="mt-1 rounded border-gray-300 bg-gray-50 text-primary focus:ring-primary" required="">
+                                <label for="consent" class="text-dark/60 text-sm">
+                                    I agree to receive communications from Distant Abodes regarding my inquiry. I understand I can unsubscribe at any time.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary w-full md:w-auto">
+                                Send Message
+                                <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section class="bg-dark-card">
+        <div class="h-96 bg-dark-alt flex items-center justify-center">
+            <div class="text-center text-text-muted">
+                <i class="fas fa-map-marked-alt text-4xl mb-4"></i>
+                <p>Map integration will be added here</p>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-16 lg:pt-20">
+    <div class="px-4 lg:px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/10">
+            <!-- Brand -->
+            <div>
+                <a href="https://distantabodes.com/" class="text-xl font-semibold text-white tracking-tight">
+                    Distant Abodes
+                </a>
+                <p class="text-white/50 mt-4 text-sm leading-relaxed">
+                    A subsidiary of JJ Investments LLC, Georgia, USA. Premium property management for overseas homeowners since 2006.
+                </p>
+                <div class="flex gap-3 mt-6">
+                    <a href="https://www.facebook.com/profile.php?id=61587516534302" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="https://www.instagram.com/distantabodes/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-instagram text-sm"></i>
+                    </a>
+                    <a href="https://youtube.com/@distantabodes" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-youtube text-sm"></i>
+                    </a>
+                    <a href="https://wa.me/919946014446" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/50 hover:bg-primary hover:text-white transition-all">
+                        <i class="fab fa-whatsapp text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h4 class="text-white font-medium mb-4">Services</h4>
+                <ul class="space-y-3">
+                    <li><a href="https://distantabodes.com/services/rental" class="text-white/50 hover:text-white text-sm transition-colors">Rental Services</a></li>
+                    <li><a href="https://distantabodes.com/services/vacant-property" class="text-white/50 hover:text-white text-sm transition-colors">Vacant Property</a></li>
+                    <li><a href="https://distantabodes.com/services/development" class="text-white/50 hover:text-white text-sm transition-colors">Special Projects</a></li>
+                    <li><a href="https://distantabodes.com/services/legal" class="text-white/50 hover:text-white text-sm transition-colors">Legal Services</a></li>
+                    <li><a href="https://distantabodes.com/services/buying-selling" class="text-white/50 hover:text-white text-sm transition-colors">Buy &amp; Sell Assistance</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white font-medium mb-4">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="https://distantabodes.com/#about" class="text-white/50 hover:text-white text-sm transition-colors">About Us</a></li>
+                    <li><a href="https://distantabodes.com/#services" class="text-white/50 hover:text-white text-sm transition-colors">Our Services</a></li>
+                    <li><a href="https://distantabodes.com/contact" class="text-white/50 hover:text-white text-sm transition-colors">Contact Us</a></li>
+                    <li><a href="https://distantabodes.com/quote" class="text-white/50 hover:text-white text-sm transition-colors">Get a Quote</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-white font-medium mb-4">Contact</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-3 text-white/50">
+                        <i class="fas fa-map-marker-alt text-accent mt-0.5"></i>
+                        <div>
+                            <p class="mb-2">14380 Cogburn Road<br>Milton, Georgia, 30004, USA</p>
+                            <p>1038/4, Edens<br>Thiruvananthapuram, Kerala, India</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 text-white/50">
+                        <i class="fas fa-phone text-accent mt-0.5"></i>
+                        <div>
+                            <p>+91-9946014446</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-3 text-white/50">
+                        <i class="fas fa-envelope text-accent"></i>
+                        <span>admin@distantabodes.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/40 text-sm">
+                    © 2026 Distant Abodes. All rights reserved.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="https://distantabodes.com/contact#" class="text-white/40 hover:text-white/60 text-sm transition-colors">Privacy Policy</a>
+                    <a href="https://distantabodes.com/contact#" class="text-white/40 hover:text-white/60 text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+        });
+    </script>
+
+    
+
+</body></html>
