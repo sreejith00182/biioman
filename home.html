@@ -3,8 +3,8 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home - Premium Property Management</title>
-    <meta name="description" content="Distant Abodes provides premium property management services for overseas homeowners with assets in Kerala. Trusted care for your distant homes.">
+    <title>Home - Business Infinite Insight</title>
+    <meta name="description" content="biiomanllc">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico?v=5">
@@ -81,6 +81,97 @@
 }
 
 }
+
+/* Global font assignment: headings use Alegreya Sans SC, body/sub-text uses Amaranth */
+body{
+    font-family: 'Amaranth', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Alegreya Sans SC', sans-serif !important;
+}
+
+/* ===================================================================
+   Page redesign: white background with dark copy, and a deeper accent
+   blue for headings so they stay legible on white. The hero section
+   (full-bleed photo) and the header nav that overlays it are left as
+   they are, since they need light text over the image. Same for the
+   photo-backed service cards in the "What We Do" carousel.
+   =================================================================== */
+
+body{
+    background-color: #FFFFFF !important;
+    color: #2A3342 !important;
+}
+
+.section-dark,
+.section-darker,
+.stats-section,
+footer.bg-dark{
+    background-color: #FFFFFF !important;
+}
+
+.section-darker{
+    background-color: #F4F7FA !important;
+}
+
+.stats-section{
+    background: #F4F7FA !important;
+}
+
+/* Heading / accent color on the new white sections (a deeper blue keeps
+   the brand hue but reads clearly on white, unlike the original
+   light #1DABDF which was tuned for a dark background) */
+.section-dark [style*="1DABDF"],
+.section-darker [style*="1DABDF"],
+.stats-section [style*="1DABDF"],
+footer [style*="1DABDF"],
+.section-dark .text-accent,
+.section-darker .text-accent,
+.stats-section .text-accent,
+footer .text-accent{
+    color: #0B5FA8 !important;
+}
+
+.stat-number{
+    color: #0B5FA8 !important;
+    text-shadow: none !important;
+}
+
+.stat-title{
+    color: #55606E !important;
+}
+
+/* Body copy (previously white/opacity text) on the new white sections */
+.section-dark [class*="text-white"],
+.section-darker [class*="text-white"],
+.stats-section [class*="text-white"],
+footer [class*="text-white"]{
+    color: #55606E !important;
+}
+
+footer h4,
+footer a.text-xl{
+    color: #1A2230 !important;
+}
+
+footer .border-white\/10{
+    border-color: #E2E7ED !important;
+}
+
+footer .bg-white\/5{
+    background-color: #EEF2F6 !important;
+}
+
+/* Keep the photo-backed "What We Do" cards light-text-on-image, since
+   turning that text dark would make it unreadable over the photos */
+.service-card-content [class*="text-white"]{
+    color: #FFFFFF !important;
+}
+
+.service-card-content [style*="1DABDF"]{
+    color: #1DABDF !important;
+}
 </style>    
 </head>
 <body class="font-sans antialiased bg-dark text-white" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="0">
@@ -90,8 +181,8 @@
         <nav class="flex items-center justify-between h-20 lg:h-24">
             <!-- Logo -->
             <a href="home.html" class="flex items-center">
-            <img src="assets/images/logo-white.jpg"
-     alt="Distant Abodes"
+            <img src="assets/images/biilogo.png"
+     alt="biiomanllc"
      class="h-16 lg:h-20 w-auto transition-all duration-300"></a>
 
             <!-- Desktop Nav -->
@@ -234,10 +325,10 @@
     <section class="relative overflow-hidden flex items-end hero-section">
         <!-- Background image carousel (original hero video was not included in the saved page) -->
         <div class="absolute inset-0 hero-carousel">
-            <img src="assets/images/distantabodes001.jpg" alt="Distant Abodes managed property in Kerala" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
-            <img src="assets/images/distantabodes002.jpg" alt="Rental property managed by Distant Abodes" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
+            <img src="assets/images/distantabodes001.jpg" alt="biiomanllc managed property in Kerala" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
+            <img src="assets/images/distantabodes002.jpg" alt="Rental property managed by biiomanllc" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
                
- <img src="assets/images/distantabodes003.jpg" alt="Rental property managed by Distant Abodes" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
+ <img src="assets/images/distantabodes003.jpg" alt="Rental property managed by biiomanllc" class="hero-carousel-slide absolute inset-0 w-full h-full object-cover">
                </div>
 
         <!-- Fallback gradient (visible under the image) -->
@@ -249,21 +340,35 @@
         <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/30 to-transparent"></div>
 
         <!-- Content - Bottom Positioned -->
-        <div class="relative w-full pb-16 md:pb-16 lg:pb-20 pt-32">
-            <div class="px-4 md:px-8 lg:px-12">
-                <div class="max-w-2xl aos-init aos-animate" data-aos="fade-up">
-                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-normal text-white mb-4 md:mb-6 leading-tight font-serif">
-                      <br>
-                        <span class="text-accent" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">You are with the best 
-Custom Exhibition Display Stand 
-Designers in Middle East</span>
-                    </h1>
-                    <p class="text-base md:text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed" style="font-family: 'Amaranth'; ">
-                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley
-                    </p>
-                </div>
-            </div>
+        <!-- Content - Bottom Positioned -->
+<div class="relative w-full pb-16 md:pb-16 lg:pb-20 pt-32">
+    <div class="px-4 md:px-8 lg:px-12">
+
+        <!-- Increased width to approximately 75% -->
+        <div class="w-full md:w-3/4 aos-init aos-animate" data-aos="fade-up">
+
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-normal text-white mb-4 md:mb-6 leading-tight font-serif">
+                <br>
+
+                <span class="text-accent"
+                      style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">
+                    YOUR BUSINESS DESERVES<br>
+                    THE BEST EXHIBITION EXPERIENCE<br>
+                    FROM DESIGN TO EXECUTION
+                </span></br>
+                 <!--<span class="text-accent"
+                      style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">
+                EXHIBITION EXCELLENCE |
+                IMPACTFUL BRAND EXPERIENCES
+            </span>-->
+            </h1>
+             <p class="text-base md:text-lg lg:text-xl text-white/80 max-w-xl leading-relaxed" style="font-family: 'Amaranth'; ">
+                             From strategic business consulting to exhibition management and custom stand solutions, we help businesses strengthen their presence, connect with the right audiences, and turn opportunities into growth.</p>
+            
+
         </div>
+    </div>
+</div>
 
         <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
@@ -279,11 +384,11 @@ Designers in Middle East</span>
             <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                 <!-- Content -->
                 <div data-aos="fade-right" class="aos-init">
-                    <h2 class="section-title leading-normal" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Exhibitions & Trade Shows,<br><em><span class="text-accent">Branding & Graphics .</span></em></h2>
+                    <h2 class="section-title leading-normal" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">STRATEGY & CONSULTING,<br><em><span class="text-accent">EXHIBITIONS & BRAND EXPERIENCES.</span></em></h2>
                     <p class="text-white/70 text-lg mb-6" style="font-family: 'Amaranth'; ">
-                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley</p>
+                       Business Infinite Insight helps businesses turn ideas into opportunities through strategic consulting, exhibition management, and creative brand solutions.</p>
                     <p class="text-white/60 text-lg" style="font-family: 'Amaranth'; ">
-                       Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley </p>
+                       From business strategy and market development to exhibition execution and custom stand solutions, we bring the insight, creativity, and expertise needed to make every business interaction count. </p>
                 </div>
 
                 <!-- Image -->
@@ -304,23 +409,23 @@ Designers in Middle East</span>
         <div class="stats-row">
 
             <div class="stat-box">
-                <h2 class="stat-number" data-count="240">0</h2>
-                <p class="stat-title">Lorem Ipsum</p>
+                <h2 class="stat-number" data-count="500">0</h2>
+                <p class="stat-title">Events Delivered</p>
             </div>
 
             <div class="stat-box">
-                <h2 class="stat-number" data-count="180">0</h2>
-                <p class="stat-title">Lorem Ipsum</p>
+                <h2 class="stat-number" data-count="100">0</h2>
+                <p class="stat-title">Brands Served</p>
             </div>
 
             <div class="stat-box">
-                <h2 class="stat-number" data-count="35">0</h2>
-                <p class="stat-title">Lorem Ipsum</p>
+                <h2 class="stat-number" data-count="25">0</h2>
+                <p class="stat-title">Industries Covered</p>
             </div>
 
             <div class="stat-box">
-                <h2 class="stat-number" data-count="48">0</h2>
-                <p class="stat-title">Lorem Ipsum</p>
+                <h2 class="stat-number" data-count="360">0</h2>
+                <p class="stat-title">Exhibition Solutions</p>
             </div>
 
         </div>
@@ -337,7 +442,8 @@ Designers in Middle East</span>
             <div class="text-left max-w-3xl mb-12 aos-init" data-aos="fade-up">
                 <h2 class="section-title" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">What We Do</h2>
                 <p class="section-subtitle" style="font-family: 'Amaranth';" >
-                   Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and </p>
+                   
+From strategic consulting to exhibition execution, we provide integrated solutions that help businesses build stronger brands, create meaningful connections, and grow with confidence.</p>
             </div>
         </div>
 
@@ -350,8 +456,8 @@ Designers in Middle East</span>
                             <img src="assets/images/distantabodes004.jpg" alt="Rental Services" class="service-card-image">
                             <div class="service-card-overlay"></div>
                             <div class="service-card-content">
-                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service1</h3>
-                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and</p>
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Business Strategy & Advisory</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Strategic guidance to help businesses identify opportunities, strengthen their market presence, and pursue sustainable growth.</p>
                             </div>
                         </a>
                     </div>
@@ -362,8 +468,8 @@ Designers in Middle East</span>
                             <img src="assets/images/distantabodes004.jpg" alt="Vacant Property" class="service-card-image">
                             <div class="service-card-overlay"></div>
                             <div class="service-card-content">
-                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service2</h3>
-                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">End-to-End Exhibition Management</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >From planning and coordination to execution, we manage exhibition projects to deliver a seamless and impactful brand presence.</p>
                             </div>
                         </a>
                     </div>
@@ -374,8 +480,8 @@ Designers in Middle East</span>
                             <img src="assets/images/distantabodes004.jpg" alt="Development" class="service-card-image">
                             <div class="service-card-overlay"></div>
                             <div class="service-card-content">
-                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service3</h3>
-                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Custom Stand Design & Fabrication</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >From creative concepts to precision fabrication, we deliver custom exhibition stands designed, built, and installed around your brand.</p>
                             </div>
                         </a>
                     </div>
@@ -386,13 +492,13 @@ Designers in Middle East</span>
                             <img src="assets/images/distantabodes004.jpg" alt="Legal Services" class="service-card-image">
                             <div class="service-card-overlay"></div>
                             <div class="service-card-content">
-                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Service4</h3>
-                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
+                                <h3 class="text-xl font-semibold text-accent mb-2" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Branding & Exhibition Graphics</h3>
+                                <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Visual branding, graphics, signage, and display elements designed to create a consistent and engaging exhibition experience.</p>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Service 5 -->
+                    <!-- Service 5 
                     <div class="swiper-slide">
                         <a href="#" class="service-card block group">
                             <img src="assets/images/distantabodes004.jpg" alt="Buy &amp; Sell" class="service-card-image">
@@ -402,7 +508,7 @@ Designers in Middle East</span>
                                 <p class="text-white/60 text-sm" style="font-family: 'Amaranth';" >Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.</p>
                             </div>
                         </a>
-                    </div>
+                    </div>-->
                 </div>
 
                 <div class="swiper-pagination"></div>
@@ -416,28 +522,28 @@ Designers in Middle East</span>
     <section class="section-dark section">
         <div class="container-main">
             <div class="max-w-3xl mb-12 aos-init" data-aos="fade-up">
-                <h2 class="section-title"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Relevant Title Here</h2>
+                <h2 class="section-title"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">OUR APPROACH</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="feature-card text-center p-6 aos-init" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Our Vision</h3>
+                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">OUR VISION</h3>
                     <p class="text-white/60" style="font-family: 'Amaranth';">
-                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                        To help businesses create stronger market presence, meaningful connections, and lasting growth through strategic thinking and impactful brand experiences.
                     </p>
                 </div>
 
                 <div class="feature-card text-center p-6 aos-init" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Our Mission</h3>
+                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">OUR MISSION</h3>
                     <p class="text-white/60" style="font-family: 'Amaranth';">
-                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                     To deliver integrated business consulting and exhibition solutions that combine strategic insight, creative thinking, and reliable execution.
                     </p>
                 </div>
 
                 <div class="feature-card text-center p-6 aos-init" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Our Goal</h3>
+                    <h3 class="text-xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">OUR COMMITMENT</h3>
                     <p class="text-white/60" style="font-family: 'Amaranth';">
-                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                        To understand every client's objectives, deliver solutions with precision, and create experiences that represent their brand with confidence.
                     </p>
                 </div>
             </div>
@@ -458,9 +564,9 @@ Designers in Middle East</span>
                     <div class="absolute -inset-1 bg-gradient-to-r from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason1</h3>
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Strategic Thinking</h3>
                     <p class="text-white/70" style="font-family: 'Amaranth';">
-                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                        We look beyond individual projects to understand your business objectives and deliver solutions aligned with your growth goals.
                     </p>
                 </div>
             </div>
@@ -472,9 +578,9 @@ Designers in Middle East</span>
                     <div class="absolute -inset-1 bg-gradient-to-l from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
                 </div>
                 <div class="lg:order-1">
-                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason2</h3>
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">End-to-End Execution</h3>
                     <p class="text-white/70" style="font-family: 'Amaranth';">
-                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                        From planning and design to fabrication and on-site execution, we bring the key elements together under one roof.
                     </p>
                 </div>
             </div>
@@ -486,9 +592,9 @@ Designers in Middle East</span>
                     <div class="absolute -inset-1 bg-gradient-to-r from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason3</h3>
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Industry Versatility</h3>
                     <p class="text-white/70" style="font-family: 'Amaranth';">
-                        Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                        Our experience across diverse brands, exhibitions, and industries enables us to adapt solutions to different business needs
                     </p>
                 </div>
             </div>
@@ -500,9 +606,9 @@ Designers in Middle East</span>
                     <div class="absolute -inset-1 bg-gradient-to-l from-primary/10 to-transparent rounded-2xl blur-xl -z-10"></div>
                 </div>
                 <div class="lg:order-1">
-                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Reason4</h3>
+                    <h3 class="text-2xl font-semibold text-accent mb-4"  style="font-family: 'Alegreya Sans SC'; color: #1DABDF;">Quality & Reliability</h3>
                     <p class="text-white/70" style="font-family: 'Amaranth';">
-                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                     We focus on thoughtful design, precise execution, and dependable delivery to ensure every project represents your brand with confidence.
                     </p>
                 </div>
             </div>
@@ -519,10 +625,11 @@ Designers in Middle East</span>
 
         <div class="container-narrow text-center relative">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 font-serif aos-init" style="font-family: 'Alegreya Sans SC'; color: #1DABDF;" data-aos="fade-up">
-                Ready to Elevate Your Exhibition?
+                READY TO MAKE YOUR NEXT EXHIBITION STAND OUT?
             </h2>
             <p style="font-family: 'Amaranth'; " class="text-lg text-white/60 mb-10 max-w-2xl mx-auto aos-init" data-aos="fade-up" data-aos-delay="100">
-                 Lorem Ipsum has been the industry's standard dummy text ever since 1966, 
+                 From strategy and exhibition management to custom stand solutions, we're ready to help you create a stronger brand presence and make your next project count.
+
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4 aos-init" data-aos="fade-up" data-aos-delay="200">
                 <a href="quote" class="btn-primary">
@@ -547,7 +654,7 @@ Designers in Middle East</span>
                     Business Infinite Insight
                 </a>
                 <p class="text-white/50 mt-4 text-sm leading-relaxed">
-                     Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and.
+                     Strategic consulting and exhibition solutions designed to help businesses build stronger brands, create meaningful connections, and unlock new opportunities.
                     </p>
                 </p>
                 <div class="flex gap-3 mt-6">
@@ -595,8 +702,9 @@ Designers in Middle East</span>
                     <li class="flex items-start gap-3 text-white/50">
                         <i class="fas fa-map-marker-alt text-accent mt-0.5"></i>
                         <div>
-                            <p class="mb-2">Asha Zachariah</p>
-                            <p>Business Infinite Insight<br>Muscat, Sultanate of Oman</p>
+                            <!--<p class="mb-2">Asha Zachariah</p>-->
+                            <p> Business Infinite Insight LLC</p>
+Muscat, Sultanate of Oman</p>
                         </div>
                     </li>
                     <li class="flex items-start gap-3 text-white/50">
@@ -628,9 +736,8 @@ Designers in Middle East</span>
     </div>
 </footer>
 
-    <!-- Scripts -->
-     <script>
-        const counters = document.querySelectorAll('.stat-number');
+<script>
+const counters = document.querySelectorAll('.stat-number');
 
 let started = false;
 
@@ -639,6 +746,8 @@ function startCounter() {
     if (started) return;
 
     const section = document.querySelector('.stats-section');
+
+    if (!section) return;
 
     const sectionTop = section.getBoundingClientRect().top;
 
@@ -660,13 +769,13 @@ function startCounter() {
 
                     count += speed;
 
-                    counter.innerHTML = Math.ceil(count) + (target >= 100 ? "+" : "");
+                    counter.innerHTML = Math.ceil(count) + "+";
 
                     requestAnimationFrame(update);
 
                 } else {
 
-                    counter.innerHTML = target + (target >= 100 ? "+" : "");
+                    counter.innerHTML = target + "+";
 
                 }
 
@@ -677,12 +786,11 @@ function startCounter() {
         });
 
     }
-
 }
 
 window.addEventListener('scroll', startCounter);
 window.addEventListener('load', startCounter);
-     </script>
+</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
