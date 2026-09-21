@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Business Infinite Insight LLC | Beyond Booths. We Build Brand Experiences.</title>
     <meta name="description" content="Business Infinite Insight LLC (BII) - Premier Exhibition Stand Design, Booth Fabrication, POSM & Brand Visibility Solutions in Muscat, Sultanate of Oman.">
 
@@ -100,16 +100,25 @@
 
         /* Luxury Header States */
         #main-header {
-            background: transparent;
-            transition: all 0.4s ease-in-out;
+            background: rgba(10, 10, 62, 0.96);
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+
+        @media (min-width: 1024px) {
+            #main-header {
+                background: transparent;
+            }
         }
 
         #main-header.scrolled {
-            background: rgba(10, 10, 62, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(10, 10, 62, 0.98) !important;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border-bottom: 1px solid rgba(29, 171, 223, 0.25);
-            box-shadow: 0 10px 30px -10px rgba(10, 10, 62, 0.5);
+            box-shadow: 0 10px 25px -10px rgba(10, 10, 62, 0.5);
         }
 
         /* Buttons & Dynamic Elevation */
@@ -354,25 +363,13 @@
         </div>
     </div>
 
-    <!-- Main Navigation Header -->
-    <header id="main-header" class="fixed top-0 md:top-[33px] left-0 w-full z-50 transition-all duration-500">
-        <div class="px-4 lg:px-12">
-            <nav class="flex items-center justify-between h-20 lg:h-24">
+   <!-- Main Navigation Header -->
+    <header id="main-header" class="fixed top-0 md:top-[33px] inset-x-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-20">
                 <!-- Brand Vector Monogram & Bilingual Logo -->
                 <a href="#home" class="flex items-center gap-3 group">
-                    <!--<div class="relative w-12 h-12 lg:w-14 lg:h-14 bg-gradient-to-br from-primary via-dark-card to-accent rounded-xl p-1.5 flex items-center justify-center shadow-lg border border-accent/40 group-hover:scale-105 transition duration-300">
-                        <svg viewBox="0 0 100 100" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 15h32c14 0 24 8 24 19 0 7-4 13-10 16 9 3 14 10 14 19 0 12-11 21-28 21H15V15z" fill="#ffffff" opacity="0.95"/>
-                            <path d="M28 27h16c6 0 11 3 11 8s-5 8-11 8H28V27zm0 28h18c7 0 12 3 12 9s-5 9-12 9H28V55z" fill="#0a0a3e"/>
-                            <polygon points="76,16 94,44 58,44" fill="#1DABDF"/>
-                            <rect x="66" y="48" width="16" height="42" rx="4" fill="#ffffff"/>
-                        </svg>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-heading font-extrabold text-xl lg:text-2xl text-white tracking-wider leading-none drop-shadow">BUSINESS INFINITE INSIGHT</span>
-                        <span class="text-xs text-accent font-semibold tracking-widest uppercase mt-0.5">رؤية اللانهائية للتجارة ش.م.م</span>
-                    </div>-->
-                    <img src="images/biilogo.png" height="70" width="170">
+                    <img src="images/biilogo.png" alt="BII Logo" class="h-12 sm:h-16 w-auto max-w-[150px] sm:max-w-[200px] object-contain">
                 </a>
 
                 <!-- Desktop Navigation Links -->
@@ -420,11 +417,30 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="lg:hidden w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-white" aria-label="Toggle menu">
-                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                <button id="mobile-menu-btn" type="button" class="lg:hidden w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center text-white border border-white/20 active:bg-white/20" aria-label="Toggle menu">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl text-accent"></i>
                 </button>
             </nav>
         </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-[#0a0a3e] border-b border-accent/20 px-6 py-5 space-y-3 w-full max-h-[80vh] overflow-y-auto shadow-2xl">
+            <div class="flex flex-col space-y-1 text-base font-heading font-bold text-white">
+                <a href="#home" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Home <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#about" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">About Us <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#solutions" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Solutions & Services <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#capabilities" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Capabilities <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#industries" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Industries <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#work" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Our Work <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#why-bii" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Why BII <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#process" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Our Process <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+                <a href="#contact" class="mobile-link py-2.5 border-b border-white/10 hover:text-accent flex items-center justify-between">Contact <i class="fa-solid fa-chevron-right text-xs text-white/40"></i></a>
+            </div>
+            <button onclick="openModal('quoteModal'); closeMobileMenu();" class="btn-primary w-full justify-center mt-3 py-3 text-sm">
+                <i class="fa-solid fa-calculator mr-2 text-accent"></i> Get a Free Quote
+            </button>
+        </div>
+    </header>
 
         <!-- Mobile Menu Drawer -->
         <div id="mobile-menu" class="lg:hidden hidden bg-dark/95 backdrop-blur-2xl border-b border-white/10 px-6 py-6 space-y-4">
@@ -1787,23 +1803,33 @@
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
 
-        mobileMenuBtn.addEventListener('click', () => {
+        function toggleMobileMenu() {
             mobileMenu.classList.toggle('hidden');
             if (mobileMenu.classList.contains('hidden')) {
-                menuIcon.classList.remove('fa-xmark');
-                menuIcon.classList.add('fa-bars');
+                menuIcon.className = "fa-solid fa-bars text-xl text-accent";
             } else {
-                menuIcon.classList.remove('fa-bars');
-                menuIcon.classList.add('fa-xmark');
+                menuIcon.className = "fa-solid fa-xmark text-xl text-accent";
             }
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden');
+            menuIcon.className = "fa-solid fa-bars text-xl text-accent";
+        }
+
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMobileMenu();
         });
 
         document.querySelectorAll('.mobile-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('fa-xmark');
-                menuIcon.classList.add('fa-bars');
-            });
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                closeMobileMenu();
+            }
         });
 
         // 4. Solutions Tab Controller (A vs B)
